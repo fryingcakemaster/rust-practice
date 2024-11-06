@@ -1,0 +1,15 @@
+[package]
+name = "simple-web"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { version = "0.7.7", features = ["ws"] }
+futures = "0.3.31"
+serde = { version = "1.0.214", features = ["derive"] }
+serde_json = "1.0.132"
+sqlx = { version = "0.8.2", features = ["postgres", "runtime-tokio-rustls"] }
+tokio = { version = "1.41.0", features = ["full"] }
+tower-http = { version = "0.6.1", features = ["cors", "fs", "trace"] }
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }

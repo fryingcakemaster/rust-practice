@@ -1,0 +1,4 @@
+[workspace]
+members = ["rust-axum-postgres-api", "simple-web"]
+resolver = "2"
+
